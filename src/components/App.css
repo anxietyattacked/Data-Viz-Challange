@@ -1,0 +1,28 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+.App {
+  margin: 0 2% 2% 2%;
+  display: grid;
+  place-content: center;
+}
+.control-container {
+  display: grid;
+  place-content: center;
+}
+.viz-container {
+  display: grid;
+  place-content: center;
+}
+.citation-container {
+  margin-top: 2rem;
+  display: grid;
+  place-content: center;
+}

@@ -3,7 +3,9 @@
 ## Objective
 
 **“What population is most affected by opioid use disorders?”**
+
 I created a global choropleth map to show what populations are most affected by opioid use disorders. The data is selectable by sex(Female, Male, Both) and year(1990-2017). The map is interactive with by being zoomable and draggable. It also features a tooltip displaying the mean, lower bound, and upper bound.
+
 [Link to Visualization](https://musical-baklava-6dff82.netlify.app/)
 
 ## Data

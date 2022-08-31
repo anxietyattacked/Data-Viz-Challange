@@ -38,34 +38,36 @@ export default function Viz({ data }) {
 
   useEffect(() => {
     if (data && world) {
-      const chart = Choropleth(data, {
-        id: (d) => d.location_name,
-        value: (d) => d.mean,
-        range: d3.interpolateYlOrRd,
-        width: 840,
-        features: countries,
-        featureId: (d) => d.properties.name,
-        title: (f, d) =>
-          `${f.properties.name} \nMean: ${d?.mean.toFixed(
-            2
-          )}\nLower Bound: ${d?.lower.toFixed(
-            2
-          )} \nUpper Bound: ${d?.upper.toFixed(2)}`,
-        borders: countrymesh,
-        projection: d3.geoEquirectangular(),
-        stroke: "black",
-        strokeWidth: ".4px",
-        viz: viz,
-        vizGroup: vizGroup,
-      });
+      if (countries && countrymesh) {
+        const chart = Choropleth(data, {
+          id: (d) => d.location_name,
+          value: (d) => d.mean,
+          range: d3.interpolateYlOrRd,
+          width: 840,
+          features: countries,
+          featureId: (d) => d.properties.name,
+          title: (f, d) =>
+            `${f.properties.name} \nMean: ${d?.mean.toFixed(
+              2
+            )}\nLower Bound: ${d?.lower.toFixed(
+              2
+            )} \nUpper Bound: ${d?.upper.toFixed(2)}`,
+          borders: countrymesh,
+          projection: d3.geoEquirectangular(),
+          stroke: "black",
+          strokeWidth: ".4px",
+          viz: viz,
+          vizGroup: vizGroup,
+        });
 
-      Legend(chart.scales.color, {
-        title: "Opioid Deaths Per 100,000 People",
-        legend: legend,
-        legendImg: legendImg,
-        legendTicks: legendTicks,
-        legendTitle: legendTitle,
-      });
+        Legend(chart.scales.color, {
+          title: "Opioid Deaths Per 100,000 People",
+          legend: legend,
+          legendImg: legendImg,
+          legendTicks: legendTicks,
+          legendTitle: legendTitle,
+        });
+      }
     }
   }, [data, countries, countrymesh, world]);
 

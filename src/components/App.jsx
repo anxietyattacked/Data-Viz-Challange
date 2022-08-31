@@ -24,9 +24,7 @@ export default function App() {
     }
     fetchData();
   }, [sex, year]);
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
+
   return (
     <div className="App">
       <div className="viz-container">

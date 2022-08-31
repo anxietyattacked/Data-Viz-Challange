@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
 import * as topojson from "topojson-client";
-import Choropleth from "./Choropleth";
-import Legend from "./Legend";
+import Choropleth from "./viz/Choropleth";
+import Legend from "./viz/Legend";
 import "./Viz.css";
 
 export default function Viz({ data }) {

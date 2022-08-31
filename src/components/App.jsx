@@ -4,8 +4,9 @@ import * as api from "../api";
 import ControlPanel from "./ControlPanel";
 import Viz from "./Viz";
 import Citation from "./Citation";
-import cleanData from "./cleanData";
+import cleanData from "./app/cleanData";
 import "./App.css";
+
 export default function App() {
   const [data, setData] = useState();
   const [sex, setSex] = useState("Females");

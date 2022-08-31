@@ -1,39 +1,28 @@
-# Data Visualization Coding Challenge - Instructions
+# Data Visualization Coding Challenge
 
 ## Objective
-Create a data visualization that helps answer the question, **“What population is most affected by opioid use disorders?”**
 
-You can choose to either start from scratch or build off the provided starter project in this repo. 
-Either approach will be weighted equally when your exercise is reviewed. 
-If you choose to use the starter project, you may modify any of the files provided as you see fit, or choose to only use some of them. 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**“What population is most affected by opioid use disorders?”**
+I created a global choropleth map to show what populations are most affected by opioid use disorders. The data is selectable by sex(Female, Male, Both) and year(1990-2017). the map is interactive with a tooltip displaying the mean, lower bound, and upper bound, as well as being zoom and draggable.
+[Link to Visualization](https://musical-baklava-6dff82.netlify.app/)
 
-Your application should include some interactivity for the user. We leave it to you to decide how best to visualize the data.
+## Data
 
-You may use any libraries or frameworks you find helpful. Here are a few suggestions for data visualization libraries:
-- [Vega-Lite](https://vega.github.io/vega-lite)
-- [Plotly.js](https://plot.ly/javascript)
-- [D3](https://d3js.org/)
-- [Victory](https://github.com/FormidableLabs/victory)
-- [Highcharts](https://github.com/highcharts/highcharts)
+Global Burden of Disease Collaborative Network.
+Global Burden of Disease Study 2017 (GBD 2017) Results.
+Seattle, United States: Institute for Health Metrics and Evaluation (IHME), 2018.
+Available from ,http://ghdx.healthdata.org/gbd-results-tool>.
+Permalink to opioid use disorder data: <http://ghdx.healthdata.org/gbd-results-tool?params=gbd-api-2017-permalink/c12b65baf872c661f4640bb583320b4e>
 
-## Data API
-For your convenience, we have created a REST API to fetch Opioid Use Death rates (Deaths per 100,000 people) for use in this data visualization challenge, docs can be found [here](https://vizhub.healthdata.org/data-viz-challenge-api/). A csv with all available data can also be found in the `data` directory. Client-side functions for interacting with the API have been created in `src/api.js`.
+Data Definitions:
 
-## What we're looking for
-
-- **Understanding of code and adherence to best practices:** Is the code structured in a way that makes it easy to read and maintain? This is your opportunity to display your understanding and skill with the JavaScript language and with program design.
-- **Visual understanding:** Is the data being presented in a way that is visually meaningful? Does it answer the question posed above?
-- **Visual appeal:** Do the visual elements add to the story or detract from it?  
-
-## Once you're done
-
-1. Make the source code available on GitHub.
-1. Host the final visualization on [GitHub Pages](https://pages.github.com/), [Heroku](https://www.heroku.com/), [CodeSandbox](https://codesandbox.io/), or any other free hosting service.
-1. Send us links to both the source code repository and the live deployment.   
+- Mean: This is the mean death rate (number of deaths per 100,000 people) due to opioid use disorders for a given location, sex, and year.
+- Upper: This is the upper bound of uncertainty for the mean
+- Lower: This is the lower bound of uncertainty for the mean`.
 
 ## Software requirements
-For the provided starter project, **you’ll need to have Node 14.0.0 or later version on your local development machine**. 
+
+**you’ll need to have Node 14.0.0 or later version on your local development machine**.
 We recommend using the latest LTS version. You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to switch Node versions between different projects.
 
 ## Getting started

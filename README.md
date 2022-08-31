@@ -3,15 +3,15 @@
 ## Objective
 
 **“What population is most affected by opioid use disorders?”**
-I created a global choropleth map to show what populations are most affected by opioid use disorders. The data is selectable by sex(Female, Male, Both) and year(1990-2017). the map is interactive with a tooltip displaying the mean, lower bound, and upper bound, as well as being zoom and draggable.
+I created a global choropleth map to show what populations are most affected by opioid use disorders. The data is selectable by sex(Female, Male, Both) and year(1990-2017). The map is interactive with by being zoomable and draggable. It also features a tooltip displaying the mean, lower bound, and upper bound.
 [Link to Visualization](https://musical-baklava-6dff82.netlify.app/)
 
 ## Data
 
-Global Burden of Disease Collaborative Network.
-Global Burden of Disease Study 2017 (GBD 2017) Results.
-Seattle, United States: Institute for Health Metrics and Evaluation (IHME), 2018.
-Available from ,http://ghdx.healthdata.org/gbd-results-tool>.
+Global Burden of Disease Collaborative Network.<br>
+Global Burden of Disease Study 2017 (GBD 2017) Results.<br>
+Seattle, United States: Institute for Health Metrics and Evaluation (IHME), 2018.<br>
+Available from ,http://ghdx.healthdata.org/gbd-results-tool>.<br>
 Permalink to opioid use disorder data: <http://ghdx.healthdata.org/gbd-results-tool?params=gbd-api-2017-permalink/c12b65baf872c661f4640bb583320b4e>
 
 Data Definitions:

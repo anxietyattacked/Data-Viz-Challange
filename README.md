@@ -13,14 +13,14 @@ I created a global choropleth map to show what populations are most affected by 
 Global Burden of Disease Collaborative Network.<br>
 Global Burden of Disease Study 2017 (GBD 2017) Results.<br>
 Seattle, United States: Institute for Health Metrics and Evaluation (IHME), 2018.<br>
-Available from ,http://ghdx.healthdata.org/gbd-results-tool>.<br>
+Available from <http://ghdx.healthdata.org/gbd-results-tool>.<br>
 Permalink to opioid use disorder data: <http://ghdx.healthdata.org/gbd-results-tool?params=gbd-api-2017-permalink/c12b65baf872c661f4640bb583320b4e>
 
 Data Definitions:
 
 - Mean: This is the mean death rate (number of deaths per 100,000 people) due to opioid use disorders for a given location, sex, and year.
 - Upper: This is the upper bound of uncertainty for the mean
-- Lower: This is the lower bound of uncertainty for the mean`.
+- Lower: This is the lower bound of uncertainty for the mean.
 
 ## Software requirements
 

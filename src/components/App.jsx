@@ -14,13 +14,10 @@ export default function App() {
 
   useEffect(() => {
     async function fetchData() {
-      const metadata = await api.fetchMetadata();
-      const citation = await api.fetchCitation();
       const fetchData = await api.fetchData({
         year_name: [year],
         sex_name: [sex],
       });
-      console.log({ metadata, citation, fetchData });
 
       const cleanedData = cleanData(fetchData);
       setData(cleanedData);
